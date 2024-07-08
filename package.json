@@ -1,0 +1,22 @@
+{
+  "name": "swc-relative-import-issue-repro",
+  "description": "A reproduction for the relative import issue with swc-node",
+  "version": "1.0.0",
+  "author": "fargito",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "format": "syncpack format && prettier --write src",
+    "test": "node --import @swc-node/register/esm-register src/index.ts",
+    "test-type": "tsc"
+  },
+  "devDependencies": {
+    "@swc-node/register": "1.10.2",
+    "@types/node": "20.14.10",
+    "prettier": "3.3.2",
+    "syncpack": "12.3.3",
+    "typescript": "5.5.3"
+  },
+  "keywords": [],
+  "packageManager": "pnpm@8.15.8+sha256.691fe176eea9a8a80df20e4976f3dfb44a04841ceb885638fe2a26174f81e65e"
+}
