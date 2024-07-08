@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "corepack",
+            "args": [
+                "pnpm",
+                "test",
+            ],
+            "sourceMaps": true,
+            "smartStep": true,
+            "protocol": "inspector",
+            "autoAttachChildProcesses": true,
+            "console": "integratedTerminal",
+            "outputCapture": "console"
+        }
+    ]
+}
